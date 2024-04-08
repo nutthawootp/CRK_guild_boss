@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "img-to-text"
+version = "0.1.0"
+description = "Extract text and characters from images using pytesseract"
+authors = ["Nutthawoot Promda <npromda@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytesseract = "^0.3.10"
+pillow = "^10.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
