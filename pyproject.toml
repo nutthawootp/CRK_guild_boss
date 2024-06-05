@@ -6,6 +6,7 @@ authors = ["Nutthawoot Promda <npromda@hotmail.com>"]
 readme = "README.md"
 package-mode = false
 
+
 [tool.poetry.dependencies]
 python = "^3.11,<3.13"
 ipykernel = "^6.29.4"
@@ -24,6 +25,8 @@ streamlit = "^1.35.0"
 pygwalker = "^0.4.8.6"
 ydata-profiling = "^4.8.3"
 
+[virtualenvs]
+in-project = true
 
 [build-system]
 requires = ["poetry-core"]
