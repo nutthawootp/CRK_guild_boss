@@ -1,28 +1,37 @@
-[tool.poetry]
+[project]
 name = "crk-guild-boss"
-version = "0.1.0"
+dynamic = [ "version" ]
 description = "extract data from screenshots, clean, and summarize for stratigic planning"
-authors = ["Nutthawoot Promda <npromda@hotmail.com>"]
+authors = [
+    { name = "Nutthawoot Promda", email = "npromda@hotmail.com" },
+]
 readme = "README.md"
+requires-python = ">=3.11"
 package-mode = false
+dependencies = [
+    "pytesseract (>=0.3.10)",
+    "pandas (>=2.2.2)",
+    "black (>=24.4.2)",
+    "sidetable (>=0.9.1)",
+    "plotly (>=5.22.0)",
+    "openpyxl (>=3.1.2)",
+    "nbformat (>=5.10.4)",
+    "ipywidgets (>=8.1.2)",
+    "streamlit (>=1.35.0)",
+    "pygwalker (>=0.4.8.6)",
+]
 
+
+[project.urls]
+repository = "https://github.com/nutthawootp/CRK_guild_boss"
+documentation = "https://github.com/nutthawootp/CRK_guild_boss"
+
+
+[tool.poetry]
+version = "1.0"  
 
 [tool.poetry.dependencies]
-python = "^3.11,<3.13"
-ipykernel = "^6.29.4"
-pillow = "^10.3.0"
-opencv-python = "^4.9.0.80"
-pytesseract = "^0.3.10"
-pandas = "^2.2.2"
-black = "^24.4.2"
-numpy = "^1.26.4"
-sidetable = "^0.9.1"
-plotly = "^5.22.0"
-openpyxl = "^3.1.2"
-nbformat = "^5.10.4"
-ipywidgets = "^8.1.2"
-streamlit = "^1.35.0"
-pygwalker = "^0.4.8.6"
+python = ">=3.11,<4.0"
 
 [virtualenvs]
 in-project = true
